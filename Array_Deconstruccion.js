@@ -19,3 +19,20 @@ console.log(b); // 20
 console.log(a); // 10
 console.log(b); // 20
 console.log(rest); // {c: 30, d: 40}
+
+//NO BORRAR
+//to get values
+for (let value of Object.values(Entrantes)) {
+    alert(value);
+}
+//Output: 1, 2, 3
+
+//to get keys
+for (let key of Object.keys(Entrantes)) {
+    alert(key);
+}
+//Output: one, two, three
+
+// Iteración de un objeto
+for (const [key, value] of Object.entries(Entrantes)) {
+  console.log(`${key}: ${value}`);}
