@@ -36,3 +36,13 @@ for (let key of Object.keys(Entrantes)) {
 // Iteración de un objeto
 for (const [key, value] of Object.entries(Entrantes)) {
   console.log(`${key}: ${value}`);}
+
+// Devuelve arreglo propiedades Keys, values
+const object1 = {
+a: 'somestring',
+b: 42,
+c: false,
+};
+
+console.log(Object.keys(object1));
+// Expected output: Array ["a", "b", "c"]
