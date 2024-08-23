@@ -1,20 +1,29 @@
-class ArrayPopper {
-  constructor(arr) {
-    this.arr = arr;
+// Guía explicativa
+// https://github.com/ElizabethMaranon/Ejercicios_Codificacion/wiki/generador_Matrices
+
+class matrizPopper {
+  constructor(matriz) {
+    this.matriz = matriz;
     this.atBeginning = true;
   }
 
-  togglePopper() {
+  alternarPopper() {
     this.atBeginning = !this.atBeginning;
-    return this.atBeginning ? this.arr.pop() : this.arr.shift();
+    return this.atBeginning ? this.matriz.pop() : this.matriz.shift();
   }
 }
 
-const ap = new ArrayPopper([1, 2, 3, 4, 5]);
-
-ap.togglePopper(); //?
-ap.togglePopper(); //?
-ap.togglePopper(); //?
-ap.togglePopper(); //?
-ap.togglePopper(); //?
-ap.togglePopper(); //?
+// const ap = new matrizPopper([1, 2, 3, 4, 5]);
+const ap = new matrizPopper([
+    "Mielma",
+    "Developer",
+    "Full Stack",
+    "Eli",
+    "Marañón"
+  ]);
+console.log(ap.alternarPopper()); //?
+console.log(ap.alternarPopper()); //?
+console.log(ap.alternarPopper()); //?
+console.log(ap.alternarPopper()); //?
+console.log(ap.alternarPopper()); //?
+console.log(ap.alternarPopper()); //?
